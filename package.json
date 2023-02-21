@@ -18,7 +18,7 @@
     "deposits"
   ],
   "author": "Deposits",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DepositsTeam/kysync-sdk/issues"
   },

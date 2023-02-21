@@ -2,7 +2,7 @@
 
 
 
-The Deposits KySync SDK allows deposits tenant/program to add KYC or KYB pages from deposits on their websites easily.
+The Deposits KySync SDK enables financial services to embed identity verification to new or existing onboarding workflows. This SDK uses the Kysync API services from Deposits. You can get API keys from your Deposits program on the console, [here](https://launch.new) or view the sandbox [here](https://kysync-web.deposits.dev/).
 
   
 
