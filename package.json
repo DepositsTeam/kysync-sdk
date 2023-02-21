@@ -1,0 +1,26 @@
+{
+  "name": "@deposits/kysync-sdk",
+  "version": "0.0.1",
+  "description": "",
+  "main": "package/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DepositsTeam/kysync-sdk.git"
+  },
+  "keywords": [
+    "kyc",
+    "kyb",
+    "kysync",
+    "identity",
+    "deposits"
+  ],
+  "author": "Deposits",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DepositsTeam/kysync-sdk/issues"
+  },
+  "homepage": "https://github.com/DepositsTeam/kysync-sdk#readme"
+}
