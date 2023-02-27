@@ -109,8 +109,10 @@ function DepositsKySync({
       // console.log(generateUrl);
       iframe = document.createElement("iframe");
       iframe.src = generateUrl;
+      // iframe.allow =
+      //   "camera 'self' https://*.deposits.com https://*.deposits.dev http://localhost:3000";
       iframe.allow =
-        "camera 'self' https://*.deposits.com https://*.deposits.dev http://localhost:3000";
+        "camera";
       iframe.style.backgroundColor = "#fff";
       iframe.style.position = "fixed";
       iframe.style.border = "none";
