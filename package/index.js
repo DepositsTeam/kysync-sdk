@@ -83,22 +83,29 @@ function DepositsKySync({
   entity_type,
   callback,
   on_page_closed,
-  live_env = false,
+  production_env = false,
   use_localhost = false,
+  kysync_host = null,
 }) {
   callbackFunc = callback;
   redirectURL = redirect_url;
+  let apiUrl = "";
   onPageClosed = on_page_closed;
   if (document.getElementById("deposits_kysync_frame_wrapper")) {
   } else {
-    let apiUrl = "";
-    if (use_localhost) {
-      apiUrl = "http://localhost:3000";
+
+    if(kysync_host) {
+      apiUrl = kysync_host
     } else {
-      apiUrl = live_env
-        ? "https://kysync-web.ondeposits.com"
-        : "https://kysync-web.deposits.dev";
+      if (use_localhost) {
+        apiUrl = "http://localhost:3000";
+      } else {
+        apiUrl = production_env
+          ? "https://kysync-web.ondeposits.com"
+          : "https://kysync-web.deposits.dev";
+      }
     }
+
 
     entity_type = entity_type.toLowerCase();
     if (entity_type !== "business" && entity_type !== "user") {
@@ -111,8 +118,7 @@ function DepositsKySync({
       iframe.src = generateUrl;
       // iframe.allow =
       //   "camera 'self' https://*.deposits.com https://*.deposits.dev http://localhost:3000";
-      iframe.allow =
-        "camera";
+      iframe.allow = "camera";
       iframe.style.backgroundColor = "#fff";
       iframe.style.position = "fixed";
       iframe.style.border = "none";

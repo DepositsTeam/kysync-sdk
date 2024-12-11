@@ -1,6 +1,6 @@
 {
   "name": "@deposits/kysync-sdk",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "",
   "main": "package/index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/DepositsTeam/kysync-sdk/issues"
   },
-  "homepage": "https://github.com/DepositsTeam/kysync-sdk#readme"
+  "homepage": "https://github.com/DepositsTeam/kysync-sdk#readme",
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
 }
